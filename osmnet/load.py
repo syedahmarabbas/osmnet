@@ -168,7 +168,7 @@ def osm_net_download(lat_min=None, lng_min=None, lat_max=None, lng_max=None,
 
     log('Downloaded OSM network data within bounding box from Overpass '
         'API in {:,} request(s) and'
-        ' {:,.2f} seconds'.format(len(geometry), time.time()-start_time))
+        ' {:,.2f} seconds'.format(len(geometry.geoms), time.time()-start_time))
 
     # stitch together individual json results
     for json in response_jsons_list:
